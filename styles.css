@@ -3,6 +3,7 @@ html {
 
     --light-blue:rgb(185, 192, 216);
     --light-pink:blanchedalmond;
+    --light-pink-2:floralwhite;
     --black:#22221ad7;
     --background:#53589ed2;
    
@@ -20,8 +21,8 @@ html {
 .title {
     font-size: 350%;
     color: var(--black);
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-left: 50px;
     font-weight: 800;
 }
@@ -101,4 +102,45 @@ button {
 }
 button:hover{
     background-color:var(--black);
+}
+.add-book{
+    font-size: 120%;
+    color: var(--black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.save-book{
+    font-size: 120%;
+    color: var(--black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    
+}
+.form {
+    display: none;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.input-name {
+    font-size: 140%;
+    color: var(--light-pink);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+input {
+    padding-right: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:var(--light-pink-2);
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    border-radius: 20px;
 }

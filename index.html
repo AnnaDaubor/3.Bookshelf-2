@@ -15,13 +15,45 @@
 
         <div class="background">
 
-            <div>
-                <h1 class="title"> Книжная полка </h1>
-
+            <div class="add-book">
+                <button onclick="openMenu()"> Добавить книгу </button>
             </div>
 
-            <div id="container" class="container">
-                
+            <div class="form" id ="addBook">
+
+                <div>
+                    <p class="input-name">Название книги</p>
+                    <input id = "title"/>
+                </div>
+
+                <div>
+                    <p class="input-name">Автор книги</p>
+                    <input id = "authors"/>
+                </div>
+
+                <div>
+                    <p class="input-name">Год издания книги</p>
+                    <input id = "year"/>
+                </div>
+
+                <div>
+                    <p class="input-name">Ссылка на изображение</p>
+                    <input id = "image"/>
+                </div>
+
+                <div class="save-book">
+                    <button onclick="addBook()"> Сохранить </button>
+                </div>
+
+            </div>
+        
+
+            <div class="title">
+                <h1> Книжная полка </h1>
+            </div>
+
+            
+            <div id="container" class="container"> 
 
             </div>
 
