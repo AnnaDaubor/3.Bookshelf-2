@@ -1,7 +1,17 @@
-function openMenu() {
-  const openForm = document.getElementById('addBook')
-  openForm.style.display="flex"
+const addModal = document.getElementById('add-modal')
+const closeModalButton = document.getElementById('close-modal-button')
+const openModalButton = document.getElementById('open-modal-button')
+
+function closeModal() {
+  addModal.style.display='none'
 }
+
+function openModal() {
+  addModal.style.display='flex'
+}
+
+closeModalButton.addEventListener('click', closeModal)
+openModalButton.addEventListener('click', openModal)
 
 const books = [
     {
@@ -82,9 +92,7 @@ const books = [
 
    
     function addBook() {
-      const closeForm = document.getElementById('addBook')
-      closeForm.style.display="none"
-
+      
       const titleValue =document.getElementById('title').value
       const authorsValue =document.getElementById('authors').value
       const yearValue =document.getElementById('year').value
@@ -101,7 +109,12 @@ const books = [
 
       renderBooks()
       clearForm()
+      closeModal ()
     }
+    
+    const saveButton =document.getElementById('save-button')
+    saveButton.addEventListener('click',addBook)
+
 
     renderBooks()
 

@@ -1,11 +1,11 @@
 html {
     font-family: 'Open Sans', sans-serif;
 
-    --light-blue:rgb(185, 192, 216);
-    --light-pink:blanchedalmond;
+    --light-blue:rgba(140, 161, 230, 0.815);
+    --light-pink:rgba(255, 205, 238, 0.507);
     --light-pink-2:floralwhite;
     --black:#22221ad7;
-    --background:#53589ed2;
+    --background:#bbbfffd2;
    
     
 }
@@ -30,22 +30,20 @@ html {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    justify-content:space-evenly;
+    
 }
 
 .container-book {
     background-color:var(--light-pink);
     border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 150px;
+    margin: 20px;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 40px;
-
-    
+    padding-bottom: 20px;
 }
+
 .book-image{
     width: 50%;
     height: 70%;
@@ -53,7 +51,6 @@ html {
     margin: 0 auto;
     padding-top: 20px;
     
-
 }
 .book-title{
     text-align: center;
@@ -116,31 +113,54 @@ button:hover{
     font-size: 120%;
     color: var(--black);
     padding-top: 50px;
-    padding-bottom: 50px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
     
 }
-.form {
+
+.button-close{
+    border-radius: 20px;
+}
+.img-close {
+    width: 25px;
+    height: 30px;
+}
+.add-modal {
+    background-color:rgba(163, 161, 161, 0.829);
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
-    flex-direction: column;
-    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.add-modal-content{
+    background-color:var(--light-pink);
+    padding: 30px;
+    border-radius: 20px;
+    width: 40%;
+
 }
 
 .input-name {
     font-size: 140%;
-    color: var(--light-pink);
-    padding-top: 5px;
-    padding-bottom: 10px;
+    color: var(--black);
     font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 input {
-    padding-right: 120px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color:var(--light-pink-2);
     font-style: italic;
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
     border-radius: 20px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
