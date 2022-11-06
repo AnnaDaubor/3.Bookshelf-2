@@ -119,7 +119,7 @@ let books = [
       renderBooks()
       clearForm()
       closeModal()
-      saveToLocalStorageг()
+      saveToLocalStorage()
 
     }
     
