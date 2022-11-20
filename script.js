@@ -131,10 +131,10 @@ function addBook() {
 
   books.push(book)
 
-  renderBooks()
-  clearForm()
-  closeModal()
-  saveToLocalStorage()
+      renderBooks()
+      clearForm()
+      closeModal()
+      saveToLocalStorageг()
 
 }
 
